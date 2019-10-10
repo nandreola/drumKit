@@ -1,0 +1,52 @@
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.3)), url(../../assets/mainBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+
+.key {
+  border: .4rem solid $darkColor;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  color: $lightColor;
+  background: rgba(0,0,0,0.5);
+  text-shadow: 0 0 .5rem $darkColor;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: $mainColor;
+  box-shadow: 0 0 1rem $mainColor;
+}
+
+kbd {
+  display: block;
+}
+
+.sound {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
