@@ -1,21 +1,32 @@
 .wrapper {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 body {
-    background: linear-gradient(rgba(255, 255, 255, 0.3)), url(../../assets/mainBg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    text-align: center
+  background: linear-gradient(rgba(255, 255, 255, 0.3)), url(../../assets/mainBg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1,
-h3 {
-    margin: 0;
+.title {
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
 }
+
+
 
 .keys {
   display: grid;
